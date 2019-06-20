@@ -2,6 +2,7 @@ import { LitElement, html, css } from 'lit-element';
 import './01-basic/basic-demos.js';
 import './02-intermediate/intermediate-demos.js';
 import './03-advanced/advanced-demos.js';
+import './04-todd/todd-demos.js';
 import '@polymer/paper-card';
 import '@vaadin/vaadin-tabs';
 import { github } from './assets/github.js';
@@ -82,6 +83,7 @@ class OpenWcDemo extends LitElement {
       {path: '/basic',  component: 'basic-demos'},
       {path: '/intermediate',  component: 'intermediate-demos'},
       {path: '/advanced',  component: 'advanced-demos'},
+      {path: '/todd',  component: 'todd-demos'},
       {path: '(.*)', redirect: '/', action: () => {
         this.activeTab = 'basic';
         }
@@ -106,6 +108,7 @@ class OpenWcDemo extends LitElement {
         <vaadin-tab @click=${() => this.switchRoute('basic')}>Basic</vaadin-tab>
         <vaadin-tab @click=${() => this.switchRoute('intermediate')}>Intermediate</vaadin-tab>
         <vaadin-tab @click=${() => this.switchRoute('advanced')}>Advanced</vaadin-tab>
+        <vaadin-tab @click=${() => this.switchRoute('todd')}>Todd</vaadin-tab>
       </vaadin-tabs>
 
       <div id="outlet">
