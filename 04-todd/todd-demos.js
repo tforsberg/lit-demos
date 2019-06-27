@@ -1,4 +1,7 @@
 import { LitElement, html, css } from 'lit-element';
+
+import {} from '../src/wc/HelloWorld.js'
+
 //import './01-basic-setup.js';
 // import './02-manage-properties.js';
 // import './03-property-changes.js';
@@ -64,7 +67,7 @@ class ToddDemos extends LitElement {
 
   render() {
     return html`
-    TEST
+    <hello-world></hello-world>
     `;
   }
 }
