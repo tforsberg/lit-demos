@@ -31,9 +31,9 @@ class AdvancedDemos extends LitElement {
           line-height: 32px;
         }
 
-        paper-card { 
+        paper-card {
           border-radius: 5px;
-          flex: 1; 
+          flex: 1;
           padding: 12px;
           margin: 0 0 32px 0;
         }
@@ -43,7 +43,7 @@ class AdvancedDemos extends LitElement {
           color: #2c3e50;
         }
 
-        h2:hover::after { 
+        h2:hover::after {
           color: #9B35FA;
           content: " #";
         }
@@ -119,3 +119,4 @@ class AdvancedDemos extends LitElement {
 }
 
 customElements.define('advanced-demos', AdvancedDemos);
+

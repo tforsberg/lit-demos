@@ -93,7 +93,7 @@ class OpenWcDemo extends LitElement {
 
   switchRoute(route) {
     this.activeTab = route;
-    Router.go(`/${route}`); 
+    Router.go(`/${route}`);
   }
 
   render() {
